@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=K2D:wght@200&family=Kalam&family=Outfit:wght@900&family=Poppins:wght@100&family=Roboto:wght@300&family=Rochester&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: rgb(228, 231, 232);
+    overflow-x: hidden;
+}
+
+/*   Main Box   */
+
+.main-box {
+    width: 85%;
+    min-height: 10rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(208, 219, 224);
+}
+
+/*   Top Section   */
+
+.top-section {
+    text-align: center;
+    font-family: sans-serif;
+    font-family: 'Poppins';
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.top-section .btn {
+    border-radius: 5rem;
+    background-color: transparent;
+    border: 1.5px solid rgb(70, 70, 70);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 0.25rem;
+    transition: 0.25s;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.top-section .btn:hover {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.top-section h1 {
+    margin: 1rem;
+}
+
+/*   Main Section   */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.main-section .box {
+    border: 2px solid rgb(208, 219, 224);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.main-section .box .buttons .btn {
+    border-radius: 5rem;
+    background-color: transparent;
+    border: 1.5px solid rgb(140, 179, 179);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 0.25rem;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.main-section .box .buttons .green {
+    border: 1.5px solid rgb(109, 179, 153);
+    color: rgb(109, 179, 153);
+}
+
+.main-section .box .buttons .green:hover {
+    background-color: rgb(109, 179, 153);
+    color: white;
+}
+
+.main-section .box .buttons .red {
+    border: 1.5px solid rgb(231, 154, 139);
+    color: rgb(231, 154, 139);
+}
+
+.main-section .box .buttons .red:hover {
+    background-color: rgb(231, 154, 139);
+    color: white;
+}
+
+.main-section .box h3 {
+    width: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.main-section .box h3 i {
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+}
+
+/*   Input Slider   */
+
+.box-slide {
+    position: relative;
+    height: 1.25rem;
+    width: 360px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+input[type="range"] {
+    appearance: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.85rem;
+    overflow: hidden;
+    width: 360px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    font-size: 3rem;
+    background-color: rgb(244, 244, 244);
+    width: 180px;
+    height: 1.25rem;
+    border-radius: 0.85rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 1.25rem;
+    width: 4rem;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.displayer {
+    height: 1.25rem;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    max-height: 1.25rem;
+    width: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*   red   */
+
+#red-track::-webkit-slider-thumb {
+    background-color: rgb(255, 107, 107);
+}
+
+.red-track {
+    background-color: rgb(255, 107, 107);
+}
+
+/*   blue   */
+
+#blue-track::-webkit-slider-thumb {
+    background-color: rgb(152, 152, 254);
+}
+
+.blue-track {
+    background-color: rgb(152, 152, 254);
+}
+
+/*   green   */
+
+#green-track::-webkit-slider-thumb {
+    background-color: rgb(109, 179, 153);
+}
+
+.green-track {
+    background-color: rgb(109, 179, 153);
+}
+
+/*   Purple   */
+
+#purple-track::-webkit-slider-thumb {
+    background-color: rgb(223, 152, 254);
+}
+
+.purple-track {
+    background-color: rgb(223, 152, 254);
+}
+
+/*   Yellow   */
+
+#yellow-track::-webkit-slider-thumb {
+    background-color: rgb(254, 245, 152);
+}
+
+.yellow-track {
+    background-color: rgb(254, 245, 152);
+}
+
+.wrap {
+    background-color: rgba(0, 0, 0, 0.231);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.pop-up {
+    top: 0;
+    width: 50%;
+    height: 80vh;
+    position: fixed;
+    margin: calc((100vh - 80vh)/2) 25%;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid rgb(208, 219, 224);
+}
+
+.pop-up h2 {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 1.5rem 0;
+}
+
+.pop-up .btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    position: relative;
+    transition: 0.25s;
+}
+
+.pop-up .btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.pop-up .btn:hover {
+    color: white;
+}
+
+.pop-up .btn:hover::before {
+    width: 100%;
+}
+
+.pop-up .color-label {
+    margin: 1rem 0;
+}
+
+.pop-up input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 0.45rem;
+    border: 2px solid rgb(208, 219, 224);
+    outline: none;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.pop-up input[type="color"] {
+    border: none;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 360px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.pop-up input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.5rem;
+}
